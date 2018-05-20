@@ -1,8 +1,8 @@
-const log = require('../../utils/console').log
+const log = require('../../utils/console').log;
 
 module.exports.run = (args) => {
-    let help = ''
-    let commands = require('../index').commands
+    let help = '';
+    let commands = require('../index').commands;
     if (args[0]) {
         if (commands[args[0]]) {
             if (commands[args[0]].help) {
@@ -22,14 +22,14 @@ module.exports.run = (args) => {
             help = 'Command not found'
         }
     } else {
-        help = 'Avaiable commands:\n' + Object.keys(commands).join(', ')
+        help = 'Avaiable commands:\n' + Object.keys(commands).join(', ');
         help += '\n\nFor custom command help type: help command\nExample: help top'
     }
     log(help)
-}
+};
 
 module.exports.help = {
     'usage': 'help command?',
     'example': 'help\nhelp top',
     'description': 'Gives help'
-}
+};

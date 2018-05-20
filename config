@@ -1,5 +1,5 @@
 module.exports = {
-    resourceSha: "0055a6959755b4ad88c4d185e850b284d7c555bc",
+    resourceSha: "52dc8219f1a7bd5459e1962c4278ada0d98c8894",
     serverKey: "8cfd11687a20d616f0b7dc0ceed00ce12f5f95e2e100c9ff561b0c4117e6e44d",
     credentials: [{
         tag: '2PP',

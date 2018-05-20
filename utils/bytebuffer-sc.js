@@ -69,7 +69,7 @@ ByteBuffer.prototype.readRrsInt32 = function (offset) {
  * @expose
  */
 ByteBuffer.prototype.writeRrsInt32 = function (value, offset) {
-    if (value === 0) this.writeByte(0)
+    if (value === 0) this.writeByte(0);
     else {
         var relative = typeof offset === 'undefined';
         if (relative) offset = this.offset;
